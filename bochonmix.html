@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<body>
+<div id="container" style="width: 100%; max-width: 2560px;  height: 1440px;">
+         <canvas id="pixie" width="2560" height="1440"></canvas>
+    </div>
+</body>
+<head>
+ <svg viewBox="00 0 760 700">
+	<symbol id="s-text">
+		<text text-anchor="middle" x="50%" y="50%">Mix</text>
+        <text text-anchor="middle" x="50%" y="38%">Bochon</text>
+	</symbol>
+
+    
+	<g class = "g-ants">
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+	</g>
+   
+</svg>
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+ 
+html, body, div, span, canvas { margin:0; padding:0; }
+#container {
+    overflow:hidden;
+    position:absolute;
+}
+#pixie {
+background: rgb(94,62,138);
+background: radial-gradient(circle, rgba(94,62,138,1) 0%, rgba(30,9,71,1) 100%);
+
+}
+svg {
+    top: 20vh;
+    left: 7vh;
+    position: absolute;
+    font: 8.5em 'Montserrat';
+    width: 250px;
+    height: 300px;
+    margin-left: 30px;
+}
+stg {
+    top: 20vh;
+    left: 7vh;
+    position: absolute;
+    font: 8.5em 'Montserrat';
+    width: 250px;
+    height: 300px;
+    margin-left: 20px;
+    }
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #bfbfbf;
+	animation-delay: -5s;
+}
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+</style>
