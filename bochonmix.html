@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
-<body>
-<div id="container" style="width: 100%; max-width: 2560px;  height: 1440px;">
-         <canvas id="pixie" width="2560" height="1440"></canvas>
-    </div>
-</body>
-<head>
  <svg viewBox="00 0 760 700">
 	<symbol id="s-text">
 		<text text-anchor="middle" x="50%" y="50%">Mix</text>
@@ -33,12 +26,17 @@ html, body, div, span, canvas { margin:0; padding:0; }
 #container {
     overflow:hidden;
     position:absolute;
+    
 }
-#pixie {
-background: rgb(94,62,138);
+    body {
+     background: rgb(94,62,138);
 background: radial-gradient(circle, rgba(94,62,138,1) 0%, rgba(30,9,71,1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 
-}
+  }
+
 svg {
     top: 20vh;
     left: 7vh;
